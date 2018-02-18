@@ -1,3 +1,9 @@
+For ubuntu:
+X11 dependencies : install libxmu-dev
+allegro: install liballegro4-dev
+(liballegro5-dev not detected)
+
+----
 Hi!
 
 The small sections are:
