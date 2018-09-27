@@ -33,6 +33,7 @@ class CLY_EXPORT TCheckBoxes : public TCluster
 
 public:
 
+  
     TCheckBoxes( const TRect& bounds, TSItem *aStrings) :
       TCluster( bounds, aStrings ) {};
 
