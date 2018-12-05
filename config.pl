@@ -4,7 +4,7 @@
 #
 # To specify the compilation flags define the CFLAGS environment variable.
 #
-
+use lib '.';
 require "miscperl.pl";
 require "conflib.pl";
 
