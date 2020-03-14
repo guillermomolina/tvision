@@ -882,7 +882,9 @@ sub LookForNCurses
  }
  $test='
 #include <stdio.h>
-#if defined(__QNX__) && !defined(__QNXNTO__)
+#if defined(__sun__)
+ #include <ncurses/curses.h>
+#elif defined(__QNX__) && !defined(__QNXNTO__)
  #include <curses.h>
 #else
  #include <ncurses.h>

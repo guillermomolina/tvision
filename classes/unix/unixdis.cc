@@ -16,7 +16,11 @@
 #if defined(HAVE_NCURSES) && defined(TVOS_UNIX) && !defined(TVOSf_QNXRtP)
 
 #include <termios.h>
-#include <term.h>
+#if defined(__sun__)
+  #include <ncurses/term.h>
+#else
+  #include <term.h>
+#endif
 
 #include <tv/unix/screen.h>
 

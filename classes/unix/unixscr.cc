@@ -52,10 +52,16 @@ Mouse reporting not disabled at exit!!!
 #define NCURSES_OPAQUE 0
 #ifdef TVOSf_FreeBSD
  #include <ncurses.h>
+#elif defined(__sun__)
+  #include <ncurses/curses.h>
 #else
  #include <curses.h>
 #endif
-#include <term.h>
+#if defined(__sun__)
+  #include <ncurses/term.h>
+#else
+  #include <term.h>
+#endif
 
 //#define DEBUG
 #ifdef DEBUG
